@@ -12,15 +12,9 @@
     font-size: 1.1rem;
     font-weight: 300;
     z-index: 99;
-    overflow: hidden;
-    transition: height 500ms ease 0s;
 }
 
-.nav-expandida {
-    height: 400px;
-}
-
-.menu-topo{
+.menu-topo {
     display: flex;
     justify-content: space-between;
 }
@@ -89,12 +83,19 @@ a:active {
         align-items: start;
         justify-content: start;
         flex-direction: column;
+        overflow: hidden;
+        transition: height 500ms ease 0s;
     }
-    
+
+    .nav-expandida {
+        height: 400px;
+    }
+
     button {
         display: block;
     }
-    .menu-topo{
+
+    .menu-topo {
         width: 100%;
     }
 
@@ -102,7 +103,7 @@ a:active {
         flex-direction: column;
     }
 
-    li{
+    li {
         height: 2rem;
     }
 }
