@@ -1,0 +1,108 @@
+.nav-expansivel {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    gap: 1.25rem;
+    padding: 0.5rem 7.5rem;
+    top: 0px;
+    width: 100%;
+    height: 4rem;
+    background-color: #343A40;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    z-index: 99;
+    overflow: hidden;
+    transition: height 500ms ease 0s;
+}
+
+.nav-expandida {
+    height: 400px;
+}
+
+.menu-topo{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+span {
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+}
+
+.menu-language {
+    height: 3rem;
+    display: block;
+    background-color: #F04936;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+button {
+    display: none;
+    box-sizing: border-box;
+    background-color: #343A40;
+    border: 0.06rem solid #696969;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.31rem;
+    cursor: pointer;
+}
+
+button:focus {
+    box-sizing: border-box;
+    border: 0.12rem solid black;
+    outline: 0.12rem solid white;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+li {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:900px) {
+    .nav-expansivel {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+    }
+    
+    button {
+        display: block;
+    }
+    .menu-topo{
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li{
+        height: 2rem;
+    }
+}
