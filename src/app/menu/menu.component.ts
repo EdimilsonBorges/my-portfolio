@@ -17,4 +17,13 @@ export class MenuComponent implements OnInit {
     this.navExpandida = !this.navExpandida;
   }
 
+  isSectionActive(id: string): boolean {
+    const section = document.getElementById(id);
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
+    return false;
+  }
+
 }
