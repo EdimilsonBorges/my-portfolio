@@ -9,7 +9,7 @@
     display: flex;
     position: relative;
     width: auto;
-    height: 400px;
+    height: 25rem;
 }
 
 .main__perfil_foto::before {
@@ -34,7 +34,7 @@
     margin-top: -0.9rem;
     display: flex;
     flex-direction: column;
-    padding-left:10%;
+    padding-left:13%;
     gap: 0.9rem;
 }
 
