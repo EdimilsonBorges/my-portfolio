@@ -1,6 +1,5 @@
 .main__pefil {
     display: flex;
-    margin-top: 4.5rem;
     height: fit-content;
     padding: 9rem 11% 0rem 11%;
 }
@@ -112,4 +111,10 @@
         margin-top: 1.25rem;
         padding: 0px;
     }
+}
+@media screen and (max-width:600px) {
+    .main__perfil__section_name{
+        font-size: 2rem;
+    }
+    
 }
