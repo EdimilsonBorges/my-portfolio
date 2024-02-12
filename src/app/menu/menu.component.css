@@ -78,10 +78,6 @@ a:active {
     color: #FFFFFF;
 }
 
-.ativo{
-    color: #FFFFFF;
-}
-
 @media screen and (max-width:900px) {
     .nav-expansivel {
         align-items: start;

@@ -2,7 +2,7 @@
     display: flex;
     margin-top: 4.5rem;
     height: fit-content;
-    padding: 9rem 11% 5rem 11%;
+    padding: 9rem 11% 0rem 11%;
 }
 
 .main__perfil_foto {
@@ -21,7 +21,7 @@
     height: 100%;
     border: solid 0.2rem #EF3724;
     box-sizing: border-box;
-    box-shadow: inset -1px 1px 5px #EF3724;
+    box-shadow: inset -0.062rem 0.062rem 0.31rem #EF3724;
     z-index: -1;
 }
 

@@ -1,0 +1,77 @@
+.section__experiencias{
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    padding: 0 11% 5rem 11%;
+}
+.section__experiencias_educacao, .section__experiencias_experiencia{
+    width: 100%;
+    position: relative;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.experiencia__time-line > li > h3 {
+    background-color: #747474;
+    color: white;
+    border-radius: 30px 2px 50px 30px;
+    padding: 7px 20px;
+    margin: 20px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.experiencia__time-line > li:first-child > h3 {
+    background-color: #EF3724;
+}
+
+.experiencia__time-line{
+    list-style: none;
+    position: relative;  
+}
+
+.experiencia__time-line::before{
+    content: "";
+    position: absolute;
+    top:30px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 2px;
+    height: 100%;
+    background-color: #e3e5e9;
+}
+.experiencia__time-line > li{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.experiencia__time-line li:first-child::before {
+    background-color: #EF3724;
+    outline: 2px solid #EF3724;
+}
+
+.experiencia__time-line >  li::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #747474;
+    border: 3px solid #fff;
+}
+
+@media screen and (max-width:900px) {
+    .section__experiencias{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

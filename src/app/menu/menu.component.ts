@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
   navExpandida: boolean = false;
+  ultimoElementoClicado: HTMLElement | null = null;
+  @ViewChild('inicio', {static: true}) inicio!: ElementRef;
+
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -17,13 +20,14 @@ export class MenuComponent implements OnInit {
     this.navExpandida = !this.navExpandida;
   }
 
-  isSectionActive(id: string): boolean {
-    const section = document.getElementById(id);
-    if (section) {
-      const rect = section.getBoundingClientRect();
-      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  clicado(event: MouseEvent):void{
+    this.inicio.nativeElement.style.color = '';
+    const novoElementoClicado = event.target as HTMLElement;
+    if (this.ultimoElementoClicado) {
+      this.ultimoElementoClicado.style.color = ''; 
     }
-    return false;
-  }
 
+    novoElementoClicado.style.color = '#fff'; 
+    this.ultimoElementoClicado = novoElementoClicado;
+  }
 }

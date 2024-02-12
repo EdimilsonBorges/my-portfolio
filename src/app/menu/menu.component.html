@@ -4,11 +4,11 @@
         <button type="button" (click)="mostrarMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#bbbbbb" d="M100.782-212.303v-106.001h758.436v106.001H100.782Zm0-214.696v-106.002h758.436v106.002H100.782Zm0-214.697v-106.001h758.436v106.001H100.782Z"/></svg></button>
     </div>
     <ul>
-        <li><a href="#home" [ngClass]="{ 'ativo': isSectionActive('home') }">Início</a></li>
-        <li><a href="#about" [ngClass]="{ 'ativo': isSectionActive('about') }">Sobre</a></li>
-        <li><a href="#technologies" [ngClass]="{ 'ativo': isSectionActive('technologies') }">Tecnologias</a></li>
-        <li><a href="#portifolio" [ngClass]="{ 'ativo': isSectionActive('projects') }">Projetos</a></li>
-        <li><a href="#contact" [ngClass]="{ 'ativo': isSectionActive('contact') }">Contato</a></li>
+        <li><a #inicio [ngStyle]="{'color': '#fff'}" (click)="clicado($event)" href="#home">Início</a></li>
+        <li><a (click)="clicado($event)" href="#about">Sobre</a></li>
+        <li><a (click)="clicado($event)" href="#skills">Habilidades</a></li>
+        <li><a (click)="clicado($event)" href="#portifolio">Projetos</a></li>
+        <li><a (click)="clicado($event)" href="#contact">Contato</a></li>
     </ul>
     <div class="menu-language">PT</div> 
 </div>
