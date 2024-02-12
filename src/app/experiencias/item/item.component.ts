@@ -10,6 +10,7 @@ export class ItemComponent implements OnInit {
   @Input() curso:string = "";
   @Input() empresa:string = "";
   @Input() descricao:string = "";
+  @Input() certificate:string = "";
 
   constructor() { }
 

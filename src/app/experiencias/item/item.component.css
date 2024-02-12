@@ -18,3 +18,12 @@ h5 {
     color: #EF3724;
     font-weight: 900;
 }
+
+.certificate a{
+    color: #EF3724;
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 10rem;
+    text-decoration: none;
+}
