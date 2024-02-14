@@ -11,6 +11,7 @@ import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { ItemComponent } from './experiencias/item/item.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { ItemPortifolioComponent } from './portifolio/item-portifolio/item-portifolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ItemPortifolioComponent } from './portifolio/item-portifolio/item-porti
     ExperienciasComponent,
     ItemComponent,
     PortifolioComponent,
-    ItemPortifolioComponent
+    ItemPortifolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
