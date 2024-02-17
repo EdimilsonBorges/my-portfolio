@@ -64,7 +64,7 @@
 }
 hr{
     display: block;
-    border-bottom: 0.12rem dashed #9FA2AB;
+    border-bottom: 0.18rem dashed #9FA2AB;
     border-top: 0.06rem solid rgba(0,0,0,0.1);
 }
 

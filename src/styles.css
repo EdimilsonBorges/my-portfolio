@@ -8,4 +8,47 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@keyframes animacao_baixo_cima {
+    from {top: 500px;}
+    to {top: 0px;}
+}
+@keyframes animacao_direita_esquerda {
+    from {left: 500px;}
+    to {left: 0px;}
+}
+
+@keyframes animacao_esquerda_direita {
+    from {right: 500px;}
+    to {right: 0px;}
+}
+
+@keyframes animacao_fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.animacao_fade{
+    visibility: visible !important;
+    animation-name: animacao_fade;
+    animation-duration: 1s;
+}
+
+.animacao_baixo_cima{
+    visibility: visible !important;
+    animation-name: animacao_baixo_cima;
+    animation-duration: 1s;
+}
+.animacao_direita_esquerda{
+    visibility: visible !important;
+    animation-name: animacao_direita_esquerda;
+    animation-duration: 1s;
+}
+
+.animacao_esquerda_direita{
+    visibility: visible !important;
+    animation-name: animacao_esquerda_direita;
+    animation-duration: 1s;
 }

@@ -18,8 +18,16 @@
 .skill__back_title{
     font-weight: 600;
 }
-.skills__front, .skills__back{
+.skills__front{
+    position: relative;
     width: 100%;
+    visibility: hidden;
+}
+
+.skills__back{
+    position: relative;
+    width: 100%;
+    visibility: hidden;
 }
 
 @media screen and (max-width:600px) {

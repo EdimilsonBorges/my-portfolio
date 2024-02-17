@@ -6,7 +6,6 @@
 }
 .section__experiencias_educacao, .section__experiencias_experiencia{
     width: 100%;
-    position: relative;
 }
 
 h3{
@@ -30,8 +29,8 @@ h3{
 }
 
 .experiencia__time-line{
+    position: relative;
     list-style: none;
-    position: relative;  
 }
 
 .experiencia__time-line::before{
