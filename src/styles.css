@@ -33,7 +33,7 @@ html{
 .animacao_fade{
     visibility: visible !important;
     animation-name: animacao_fade;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .animacao_baixo_cima{
@@ -52,3 +52,4 @@ html{
     animation-name: animacao_esquerda_direita;
     animation-duration: 1s;
 }
+
