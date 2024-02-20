@@ -52,4 +52,7 @@ html{
     animation-name: animacao_esquerda_direita;
     animation-duration: 1s;
 }
+.nome_oculto{
+    display: none;
+}
 
