@@ -13,6 +13,7 @@ import { PortifolioComponent } from './portifolio/portifolio.component';
 import { ItemPortifolioComponent } from './portifolio/item-portifolio/item-portifolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollAnimationDirective } from './app.scroll-animation.directive';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ScrollAnimationDirective } from './app.scroll-animation.directive';
     PortifolioComponent,
     ItemPortifolioComponent,
     ContactComponent,
-    ScrollAnimationDirective
+    ScrollAnimationDirective,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
