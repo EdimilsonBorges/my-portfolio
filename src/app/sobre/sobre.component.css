@@ -7,6 +7,7 @@
 .main__perfil_foto {
     position: relative;
     display: flex;
+    visibility: hidden;
     position: relative;
     width: auto;
     height: 25rem;
@@ -35,6 +36,7 @@
     width: 100%;
     margin-top: -0.9rem;
     display: flex;
+    visibility: hidden;
     flex-direction: column;
     padding-left:13%;
     gap: 0.9rem;

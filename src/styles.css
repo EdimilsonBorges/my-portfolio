@@ -16,12 +16,12 @@ html{
     to {top: 0px;}
 }
 @keyframes animacao_direita_esquerda {
-    from {left: 500px;}
+    from {left: 200px;}
     to {left: 0px;}
 }
 
 @keyframes animacao_esquerda_direita {
-    from {right: 500px;}
+    from {right: 200px;}
     to {right: 0px;}
 }
 
