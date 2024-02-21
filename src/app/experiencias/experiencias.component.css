@@ -56,7 +56,7 @@ h3{
     outline: 2px solid #EF3724;
 }
 
-.experiencia__time-line >  li::before{
+.experiencia__time-line > li::before{
     content: "";
     position: absolute;
     top: 7px;
@@ -66,7 +66,13 @@ h3{
     border-radius: 50%;
     background-color: #747474;
     border: 3px solid #fff;
+    visibility: hidden;
 }
+
+.mostra_ano::before{
+    visibility: visible !important;
+}
+
 
 @media screen and (max-width:900px) {
     .section__experiencias{
