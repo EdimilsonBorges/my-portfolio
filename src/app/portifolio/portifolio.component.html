@@ -2,29 +2,9 @@
     <span>Portifólio</span>
     <h2>Veja meu trabalho</h2>
     <div class="itens__portifolio">
-        <a href="https://lutas-e-questoes-de-genero.netlify.app/"  target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-6.jpg" titulo="Lutas e questões de Gênero"
-                descricao="Bootstrap, JavaScript, HTML5, CSS3"></app-item-portifolio>
-        </a>
-        <a href="https://playstation-store-clone.netlify.app/" target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-7.jpg" titulo="Playstation Store Clone"
-                descricao="Ângular, TypeScript, HTML5, CSS3"></app-item-portifolio>
-        </a>
-        <a href="https://blog-desafio-dio.netlify.app/" target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-1.jpg" titulo="Blog Pessoal"
-                descricao="Ângular, TypeScript, HTML5, CSS3"></app-item-portifolio>
-        </a>
-        <a href="https://edimilsonborges.github.io/decodificador-de-texto/" target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-2.jpg" titulo="Decodificador de texto"
-                descricao="Ângular, TypeScript, HTML5, CSS3"></app-item-portifolio>
-        </a>
-        <a href="https://edimilsonborges.github.io/piano-game-js/" target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-3.jpg" titulo="Piano"
-                descricao="JavaScript, HTML5, CSS3"></app-item-portifolio>
-        </a>
-        <a href="https://edimilsonborges.github.io/yugioh-js/"  target="_blank">
-            <app-item-portifolio imagem="../../../assets/work-4.jpg" titulo="YugiOh Game"
-                descricao="JavaScript, HTML5, CSS3"></app-item-portifolio>
+        <a *ngFor="let portifolio of portifolios" [href]="portifolio.link" target="_blank">
+            <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo"
+                [descricao]="portifolio.tecnologias"></app-item-portifolio>
         </a>
     </div>
     <!-- <a class="btn__ver-todos" href="#" type="button">Ver todos</a> -->

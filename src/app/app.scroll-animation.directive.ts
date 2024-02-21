@@ -14,8 +14,8 @@ export class ScrollAnimationDirective {
     const rect = this.el.nativeElement.getBoundingClientRect();
     const isVisible = (
       rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight + 300 || document.documentElement.clientHeight + 300) &&
-      rect.top < (window.innerHeight + 300 || document.documentElement.clientHeight + 300)
+      rect.bottom <= (window.innerHeight + 450 || document.documentElement.clientHeight + 450) &&
+      rect.top < (window.innerHeight || document.documentElement.clientHeight)
     );
     if (isVisible) {
       this.el.nativeElement.classList.add(this.animationClass);

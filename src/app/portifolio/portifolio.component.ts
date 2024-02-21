@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IPortifolio, portifolios } from '../protifolios';
 
 @Component({
   selector: 'app-portifolio',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portifolio.component.css']
 })
 export class PortifolioComponent implements OnInit {
+
+  portifolios:IPortifolio[] = portifolios;
 
   constructor() { }
 
