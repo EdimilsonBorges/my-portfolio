@@ -20,9 +20,9 @@
     left: 1.2rem;
     width: 100%;
     height: 100%;
-    border: solid 0.2rem #EF3724;
+    border: solid 0.2rem var(--secundario);
     box-sizing: border-box;
-    box-shadow: inset -0.062rem 0.062rem 0.31rem #EF3724;
+    box-shadow: inset -0.062rem 0.062rem 0.31rem var(--secundario);
     z-index: -1;
 }
 
@@ -44,19 +44,19 @@
 
 .main__perfil__section_name {
     font-size: 2.3rem;
-    color: #343A40;
+    color: var(--principal);
     font-weight: 400;
 }
 
 .main__perfil__section_profissao {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #EF3724;
+    color: var(--secundario);
 }
 
 .main__perfil__section_sobre {
     font-size: 1rem;
-    color: #343A40;
+    color: var(--principal);
     width: 100%;
 }
 
@@ -80,7 +80,7 @@
     margin: auto;
     width: 0.06rem;
     height: 85%;
-    background-color: #a1a1a1;
+    background-color: var(--principal);
     z-index: -1;
 }
 
@@ -96,8 +96,8 @@
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    background-color: #fff;
-    border: 0.13rem solid #EF3724;
+    background-color: var(--text-white);
+    border: 0.13rem solid var(--secundario);
 }
 
 @media screen and (max-width:900px) {

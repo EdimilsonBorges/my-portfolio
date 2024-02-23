@@ -2,10 +2,10 @@
     <span>Portifólio</span>
     <h2>Veja meu trabalho</h2>
     <div class="itens__portifolio">
-        <a *ngFor="let portifolio of portifolios" [href]="portifolio.link" target="_blank">
+        <a *ngFor="let portifolio of portifolios.slice(0, 6)" [href]="portifolio.link" target="_blank">
             <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo"
                 [descricao]="portifolio.tecnologias"></app-item-portifolio>
         </a>
     </div>
-    <!-- <a class="btn__ver-todos" href="#" type="button">Ver todos</a> -->
+    <a class="btn__ver-todos" href="#" type="button">Ver todos</a>
 </section>

@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 4px;
-    background-color: #F4F5F8;
+    background-color: var(--background-experiencia-item);
     padding: 10px 20px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -15,12 +15,12 @@ h5 {
 }
 
 h6 {
-    color: #EF3724;
+    color: var(--secundario);
     font-weight: 900;
 }
 
 .certificate a{
-    color: #EF3724;
+    color: var(--secundario);
     font-weight: 900;
     font-size: 0.8rem;
     text-align: center;

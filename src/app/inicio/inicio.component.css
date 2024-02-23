@@ -20,23 +20,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(62, 57, 57, 0.8);
+    background-color: var(--bacground-image-header);
     z-index: -1;
 }
 
 .container__inicio>p {
-    color: #fff;
+    color: var(--text-white);
     font-weight: 400;
     font-size: 1.25rem;
 }
 
 .container__inicio>h1 {
-    color: #fff;
+    color: var(--text-white);
     font-weight: 400;
     font-size: 2.5rem;
 }
 .container__inicio > h1 > span {
-    color: #EF3724;
+    color: var(--secundario);
 }
 
 .skill{
@@ -44,7 +44,7 @@
     width: fit-content;
     text-align: center;
     margin: 1.87rem auto;
-    background-color: rgba(239, 55, 36,0.3);
+    background-color: var(--background-title);
     border-radius: 3.12rem;
     padding: 0.62rem 1.25rem;
     font-weight: 600;

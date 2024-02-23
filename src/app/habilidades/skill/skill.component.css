@@ -7,7 +7,7 @@ h4 {
 
 .progress {
     width: 100%;
-    border: solid 2px #EF3724;
+    border: solid 2px var(--secundario);
     padding: 3px;
     border-radius: 15px;
 }
@@ -17,9 +17,9 @@ h4 {
     justify-content: center;
     align-items: center;
     height: 20px;
-    background-color: #EF3724;
+    background-color: var(--secundario);
     border-radius: 15px;
-    color: #ffffff;
+    color: var(--text-white);
     font-size: 13px;
     font-weight: 400;
 }

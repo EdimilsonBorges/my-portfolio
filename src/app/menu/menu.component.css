@@ -7,9 +7,9 @@
     width: 100%;
     padding: 0.8rem 9%;
     height: 4.5rem;
-    background-color: #343A40;
-    box-shadow: #0d0d0e 0px 0px 5px 0px;
-    color: white;
+    background-color: var(--principal);
+    box-shadow: var(--princial-shadow);
+    color: var(--text-white);
     font-size: 1.1rem;
     font-weight: 300;
     z-index: 99;
@@ -30,7 +30,7 @@ span {
 .menu-language {
     height: 3rem;
     display: block;
-    background-color: #F04936;
+    background-color: var(--secundario);
     padding: 0.8rem;
     border-radius: 50%;
     font-weight: 500;
@@ -39,8 +39,8 @@ span {
 button {
     display: none;
     box-sizing: border-box;
-    background-color: #343A40;
-    border: 0.06rem solid #696969;
+    background-color: var(--principal);
+    border: 0.06rem solid var(--principal);
     padding: 0.4rem 0.8rem;
     border-radius: 0.31rem;
     cursor: pointer;
@@ -49,7 +49,7 @@ button {
 button:focus {
     box-sizing: border-box;
     border: 0.12rem solid black;
-    outline: 0.12rem solid white;
+    outline: 0.12rem solid var(--text-white);
 }
 
 ul {
@@ -76,7 +76,7 @@ a:hover {
 }
 
 a:active {
-    color: #FFFFFF;
+    color: var(--text-white);
 }
 
 @media screen and (max-width:900px) {
