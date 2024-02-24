@@ -100,6 +100,28 @@
     border: 0.13rem solid var(--secundario);
 }
 
+.main__perfil__redes{ 
+    display: flex;
+    gap:1rem;
+    width: 100%; 
+}
+
+.main__perfil__redes svg{ 
+    fill: #444; 
+}
+
+.main__perfil__redes svg:hover{ 
+    fill: #000; 
+}
+.main__perfil__redes > a:first-child > svg:hover{ 
+    fill: #0025f5; 
+}
+
+.main__perfil__redes > a:nth-child(3) > svg:hover{ 
+    fill: #27bd02; 
+}
+
+
 @media screen and (max-width:900px) {
     .main__pefil {
         flex-direction: column;
