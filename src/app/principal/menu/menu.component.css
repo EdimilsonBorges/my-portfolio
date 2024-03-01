@@ -27,13 +27,11 @@ span {
     font-weight: 400;
 }
 
-.menu-language {
+.menu-language > svg {
     height: 3rem;
-    display: block;
-    background-color: var(--secundario);
-    padding: 0.8rem;
+    width: 3rem;
     border-radius: 50%;
-    font-weight: 500;
+    border: 2px solid var( --text-dark);
 }
 
 button {
