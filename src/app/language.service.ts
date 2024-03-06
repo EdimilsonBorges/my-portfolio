@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class LanguageService {
 
-  language: BehaviorSubject<string> = new BehaviorSubject<string>("pt");
+  language: BehaviorSubject<string> = new BehaviorSubject<string>("pt-br");
   storageLanguage: string | null;
   private renderer: Renderer2;
 
