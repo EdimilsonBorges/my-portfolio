@@ -48,7 +48,7 @@ export class InicioComponent {
     "es": {
       welcome: "¡Sea bienvenido!",
       preTitle: "Soy",
-      posTitle: "Full Stack Developer"
+      posTitle: "Desarrollador web full stack"
     }
   }
 }

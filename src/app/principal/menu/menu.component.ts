@@ -26,7 +26,7 @@ export class MenuComponent {
 
   constructor(protected languageService: LanguageService) {
     languageService.language.subscribe(value => {
-      this.setText();
+      this.setText(value);
       languageService.setLanguage(value);
     });
   }
@@ -46,19 +46,20 @@ export class MenuComponent {
     this.ultimoElementoClicado = novoElementoClicado;
   }
 
-  private setText() {
-    this.menuTitle = this.text[this.languageService.language.value].menuTitle;
-    this.linkHome = this.text[this.languageService.language.value].linkHome;
-    this.linkAbout = this.text[this.languageService.language.value].linkAbout;
-    this.linkSkills = this.text[this.languageService.language.value].linkSkills;
-    this.linkProjects = this.text[this.languageService.language.value].linkProjects;
-    this.linkContact = this.text[this.languageService.language.value].linkContact;
-    this.textBtnTitlePT = this.text[this.languageService.language.value].textBtnTitlePT;
-    this.textBtnTitleUS = this.text[this.languageService.language.value].textBtnTitleUS;
-    this.textBtnTitleES = this.text[this.languageService.language.value].textBtnTitleES;
+  private setText(value:string) {
+    this.menuTitle = this.languageService.textMenu[value].menuTitle;
+    this.linkHome = this.languageService.textMenu[value].linkHome;
+    this.linkAbout = this.languageService.textMenu[value].linkAbout;
+    this.linkSkills = this.languageService.textMenu[value].linkSkills;
+    this.linkProjects = this.languageService.textMenu[value].linkProjects;
+    this.linkContact = this.languageService.textMenu[value].linkContact;
+    this.textBtnTitlePT = this.languageService.textMenu[value].textBtnTitlePT;
+    this.textBtnTitleUS = this.languageService.textMenu[value].textBtnTitleUS;
+    this.textBtnTitleES = this.languageService.textMenu[this.languageService.language.value].textBtnTitleES;
   }
 
   protected selectLanguage(element: HTMLDivElement) {
+    this.click = !this.click;
     
     if (this.languageService.language.value !== element.id) {
       if (element.id === "pt-br") {
@@ -71,44 +72,6 @@ export class MenuComponent {
         this.languageService.language.next("us");
         localStorage.setItem("language", "us");
       }
-    }
-    this.click = !this.click;
-  }
-
-  text: any = {
-    "pt-br": {
-      menuTitle: "Portifólio",
-      linkHome: "Início",
-      linkAbout: "Sobre",
-      linkSkills: "Habilidades",
-      linkProjects: "Projetos",
-      linkContact: "Contatos",
-      textBtnTitlePT: "Português Brasil",
-      textBtnTitleUS: "Inglês",
-      textBtnTitleES: "Espanhol"
-
-    },
-    "us": {
-      menuTitle: "Portifolio",
-      linkHome: "Home",
-      linkAbout: "About",
-      linkSkills: "Skills",
-      linkProjects: "Projects",
-      linkContact: "Contact",
-      textBtnTitlePT: "Portuguese Brazil",
-      textBtnTitleUS: "English",
-      textBtnTitleES: "Spanish"
-    },
-    "es": {
-      menuTitle: "Portafolio",
-      linkHome: "Comenzar",
-      linkAbout: "Acerca de",
-      linkSkills: "Habilidades",
-      linkProjects: "Proyectos",
-      linkContact: "Contactos",
-      textBtnTitlePT: "Portugués Brasil",
-      textBtnTitleUS: "Inglés",
-      textBtnTitleES: "Español"
     }
   }
 }
