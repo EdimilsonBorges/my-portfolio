@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { Component, ViewChild, OnInit, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -10,10 +10,41 @@ export class MenuComponent implements OnInit {
   navExpandida: boolean = false;
   ultimoElementoClicado: HTMLElement | null = null;
   @ViewChild('inicio', {static: true}) inicio!: ElementRef;
+  @Input() language:string = "ptbr";
 
-  constructor() { }
+  text:any = {
+    ptbr: {
+      menuTitle: "Portifólio",
+      linkHome: "Início",
+      linkAbout: "Sobre",
+      linkSkills: "Habilidades",
+      linkProjects: "Projetos",
+      linkContact:"Contatos"
+
+    },
+    us:{
+      menuTitle: "Portifolio",
+      linkHome: "Home",
+      linkAbout: "About",
+      linkSkills: "Skills",
+      linkProjects: "Projects",
+      linkContact:"Contact"
+    }
+  };
+
+  menuTitle:string = "";
+  linkHome:string = "";
+  linkAbout:string = "";
+  linkSkills:string = "";
+  linkProjects:string = "";
+  linkContact:string = "";
+
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    this.setText();
   }
 
   mostrarMenu(){
@@ -29,5 +60,14 @@ export class MenuComponent implements OnInit {
 
     novoElementoClicado.style.color = '#fff'; 
     this.ultimoElementoClicado = novoElementoClicado;
+  }
+
+  setText(){
+    this.menuTitle = this.text[this.language].menuTitle;
+    this.linkHome = this.text[this.language].linkHome;
+    this.linkAbout = this.text[this.language].linkAbout;
+    this.linkSkills = this.text[this.language].linkSkills;
+    this.linkProjects = this.text[this.language].linkProjects;
+    this.linkContact = this.text[this.language].linkContact;
   }
 }
