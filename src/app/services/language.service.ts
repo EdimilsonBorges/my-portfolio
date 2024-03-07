@@ -1,6 +1,6 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { LangType } from './principal/shared/lang-type.type';
+import { LangType } from '../shared/lang-type.type';
 
 @Injectable({
   providedIn: 'root'

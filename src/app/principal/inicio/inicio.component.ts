@@ -1,6 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/language.service';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-inicio',

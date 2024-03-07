@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/language.service';
-import { LangType } from '../shared/lang-type.type';
+import { LanguageService } from 'src/app/services/language.service';
+import { LangType } from '../../shared/lang-type.type';
 
 @Component({
   selector: 'app-sobre',

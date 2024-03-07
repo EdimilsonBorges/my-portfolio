@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IEducacao, IEducacaoItem, IExperiencia, IExperienciaItem, educacoes, experiencias } from '../educacao-experiencia';
-import { LanguageService } from 'src/app/language.service';
+import { IEducacao, IEducacaoItem, IExperiencia, IExperienciaItem, educacoes, experiencias } from '../../shared/educacao-experiencia';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-experiencias',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { LanguageService } from 'src/app/language.service';
-import { IPortifolio, portifolios } from '../protifolios';
+import { LanguageService } from 'src/app/services/language.service';
+import { IPortifolio, portifolios } from '../../shared/protifolios';
 
 @Component({
   selector: 'app-portifolio',

@@ -13,7 +13,7 @@ import { PrincipalComponent } from './principal.component';
 import { ItemComponent } from './experiencias/item/item.component';
 import { SkillComponent } from './habilidades/skill/skill.component';
 import { ItemPortifolioComponent } from './portifolio/item-portifolio/item-portifolio.component';
-import { ScrollAnimationDirective } from './shared/app.scroll-animation.directive';
+import { ScrollAnimationDirective } from '../directives/app.scroll-animation.directive';
 
 
 

@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { LanguageService } from 'src/app/language.service';
-import { LangType } from '../shared/lang-type.type';
-import { ScrollViewService } from 'src/app/scroll-view.service';
+import { LanguageService } from 'src/app/services/language.service';
+import { LangType } from '../../shared/lang-type.type';
+import { ScrollViewService } from 'src/app/services/scroll-view.service';
 
 @Component({
   selector: 'app-menu',

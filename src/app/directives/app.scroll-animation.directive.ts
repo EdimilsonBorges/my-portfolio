@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
-import { ScrollViewService } from 'src/app/scroll-view.service';
+import { ScrollViewService } from 'src/app/services/scroll-view.service';
 
 @Directive({
   selector: '[appScrollAnimation]'
