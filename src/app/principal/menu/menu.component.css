@@ -79,6 +79,10 @@ a:hover {
     color: #dddddd;
 }
 
+.activeMenu{
+    color: var(--text-white);  
+}
+
 a:active {
     color: var(--text-white);
 }

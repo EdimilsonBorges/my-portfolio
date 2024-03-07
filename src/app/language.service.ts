@@ -1,18 +1,19 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { LangType } from './principal/shared/lang-type.type';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
 
-  language: BehaviorSubject<string> = new BehaviorSubject<string>("pt-br");
-  storageLanguage: string | null;
+  language: BehaviorSubject<keyof LangType> = new BehaviorSubject<keyof LangType>("pt-br");
+  storageLanguage: keyof LangType;
   private renderer: Renderer2;
 
   constructor(private rendererFactory: RendererFactory2) {
     this.renderer = this.rendererFactory.createRenderer(null, null);
-    this.storageLanguage = localStorage.getItem("language");
+    this.storageLanguage = localStorage.getItem("language") as keyof LangType;
     if (this.storageLanguage !== null) {
       this.language.next(this.storageLanguage);
       this.setLanguage(this.storageLanguage);
@@ -21,13 +22,13 @@ export class LanguageService {
     }
   }
 
-  setLanguage(lang: string) {
+  setLanguage(lang: keyof LangType) {
     const description = document.querySelector('meta[name="description"]');
     this.renderer.setAttribute(document.documentElement, 'lang', lang);
     this.renderer.setAttribute(description, "content", this.textTags[lang].description);
   }
 
-  textTags:any = {
+  textTags:LangType = {
     "pt-br": {
       description: "Sou um desenvolvedor Full Stack apaixonado por criar soluções web. Minhas habilidades incluem a criação de interfaces de usuário responsivas. Estou constantemente atualizando minhas habilidades para me manter atualizado com as tendências tecnológicas, estou ansioso para enfrentar desafios e colaborar em projetos. Minha paixão pelo desenvolvimento web e mobile me impulsiona a buscar soluções criativas e a entregar produtos de alta qualidade que atendam às necessidades dos clientes e dos usuários finais."
     },
@@ -39,7 +40,7 @@ export class LanguageService {
     }
   }
 
-  textMenu: any = {
+  textMenu:LangType = {
     "pt-br": {
       menuTitle: "Portifólio",
       linkHome: "Início",
@@ -66,7 +67,7 @@ export class LanguageService {
     "es": {
       menuTitle: "Portafolio",
       linkHome: "Comenzar",
-      linkAbout: "Acerca de",
+      linkAbout: "Conóceme",
       linkSkills: "Habilidades",
       linkProjects: "Proyectos",
       linkContact: "Contactos",
@@ -76,7 +77,7 @@ export class LanguageService {
     }
   }
 
-  textAbout: any = {
+  textAbout:LangType = {
     "pt-br": {
       profissionName: "Desenvolvedor Web Full Stack",
       description: "Sou um desenvolvedor Full Stack apaixonado por criar soluções web. Minhas habilidades incluem a criação de interfaces de usuário responsivas. Estou constantemente atualizando minhas habilidades para me manter atualizado com as tendências tecnológicas, estou ansioso para enfrentar desafios e colaborar em projetos. Minha paixão pelo desenvolvimento web e mobile me impulsiona a buscar soluções criativas e a entregar produtos de alta qualidade que atendam às necessidades dos clientes e dos usuários finais.",
@@ -112,7 +113,7 @@ export class LanguageService {
     }
   }
 
-  textSkills: any = {
+  textSkills:LangType = {
     "pt-br": {
       skillTitle: "Habilidades Técnicas"
     },
@@ -123,7 +124,7 @@ export class LanguageService {
       skillTitle: "Habilidades Técnicas"
     }
   }
-  textPortifolio: any = {
+  textPortifolio:any = {
     "pt-br": {
       spanText: "Portifólio",
       titlePortifolio: "Veja meu trabalho",
@@ -139,7 +140,7 @@ export class LanguageService {
     }
   }
 
-  textExperiencias: any = {
+  textExperiencias:LangType = {
     "pt-br": {
       titleEducation: "Educação",
       titleExperience: "Experiência",

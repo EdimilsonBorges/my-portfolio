@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ISkill, skillsFront, skillsBack } from '../skills';
 import { LanguageService } from 'src/app/language.service';
+import { LangType } from '../shared/lang-type.type';
 
 @Component({
   selector: 'app-habilidades',
@@ -19,7 +20,7 @@ export class HabilidadesComponent {
       this.setText(value);
     });
    }
-   setText(value: string) {
+   setText(value: keyof LangType) {
     this.skillTitle = this.languageService.textSkills[value].skillTitle;
   }
 }

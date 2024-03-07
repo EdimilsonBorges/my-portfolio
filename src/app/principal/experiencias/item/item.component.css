@@ -1,12 +1,12 @@
 .item__content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 4px;
+    gap: 0.62rem;
+    border-radius: 0.25rem;
     background-color: var(--background-experiencia-item);
-    padding: 10px 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    padding: 0.62rem 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 h5 {

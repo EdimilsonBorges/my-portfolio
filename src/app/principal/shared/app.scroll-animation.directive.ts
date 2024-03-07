@@ -1,13 +1,15 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { ScrollViewService } from 'src/app/scroll-view.service';
 
 @Directive({
   selector: '[appScrollAnimation]'
 })
 export class ScrollAnimationDirective {
 
-  @Input() animationClass!: string;
+  @Input() animationClass: string = "";
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef, private scrollViewService: ScrollViewService) {
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -18,7 +20,21 @@ export class ScrollAnimationDirective {
       rect.top < (window.innerHeight || document.documentElement.clientHeight)
     );
     if (isVisible) {
-      this.el.nativeElement.classList.add(this.animationClass);
+      if (this.animationClass !== "") {
+        this.el.nativeElement.classList.add(this.animationClass);
+      }
+      switch (this.el.nativeElement.classList[0]) {
+        case "inicio": this.scrollViewService.classMenu.next("inicio");
+          break;
+        case "sobre": this.scrollViewService.classMenu.next("sobre");
+          break;
+        case "habilidades": this.scrollViewService.classMenu.next("habilidades");
+          break;
+        case "portifolio": this.scrollViewService.classMenu.next("portifolio");
+          break;
+        case "contact": this.scrollViewService.classMenu.next("contact");
+          break;
+      }
     }
   }
 }

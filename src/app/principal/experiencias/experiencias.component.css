@@ -1,7 +1,7 @@
 .section__experiencias{
     display: flex;
     width: 100%;
-    gap: 100px;
+    gap: 6.25rem;
     padding: 6.25rem 11% 5rem 11%;
 }
 .section__experiencias_educacao, .section__experiencias_experiencia{
@@ -16,10 +16,10 @@ h3{
 .experiencia__time-line > li > h4 {
     background-color: var(--principal);
     color: var(--text-white);
-    border-radius: 30px 2px 50px 30px;
-    padding: 7px 20px;
-    margin: 20px;
-    width: 150px;
+    border-radius: 1.87rem 1.12rem 3.12rem 1.87rem;
+    padding: 0.44rem 1.25rem;
+    margin: 1.25rem;
+    width: 9.37rem;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -36,36 +36,36 @@ h3{
 .experiencia__time-line::before{
     content: "";
     position: absolute;
-    top:30px;
-    left: 0px;
-    bottom: 0px;
+    top:1.87rem;
+    left: 0rem;
+    bottom: 0rem;
     margin: auto;
-    width: 2px;
+    width: 0.12rem;
     height: 100%;
     background-color: var(--text-dark)
 }
 .experiencia__time-line > li{
     position: relative;
     display: block;
-    padding-left: 10px;
-    margin-bottom: 30px;
+    padding-left: 0.62rem;
+    margin-bottom: 1.87rem;
 }
 
 .experiencia__time-line li:first-child::before {
     background-color: var(--secundario);
-    outline: 2px solid var(--secundario);
+    outline: 0.15rem solid var(--secundario);
 }
 
 .experiencia__time-line > li::before{
     content: "";
     position: absolute;
-    top: 7px;
-    left: -10px;
-    width: 15px;
-    height: 15px;
+    top: 0.43rem;
+    left: -0.62rem;
+    width: 0.94rem;
+    height: 0.94rem;
     border-radius: 50%;
     background-color: var(--principal);
-    border: 3px solid var(--text-white);
+    border: 0.19rem solid var(--text-white);
     visibility: hidden;
 }
 

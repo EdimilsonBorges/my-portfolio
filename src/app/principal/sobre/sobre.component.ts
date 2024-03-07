@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from 'src/app/language.service';
+import { LangType } from '../shared/lang-type.type';
 
 @Component({
   selector: 'app-sobre',
@@ -28,7 +29,7 @@ export class SobreComponent {
     });
   }
 
-  setText(value: string ) {
+  setText(value: keyof LangType) {
     this.profissionName = this.languageService.textAbout[value].profissionName;
     this.description = this.languageService.textAbout[value].description;
     this.inText = this.languageService.textAbout[value].inText;

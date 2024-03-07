@@ -1,5 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { LanguageService } from 'src/app/language.service';
+import { LangType } from '../shared/lang-type.type';
+import { ScrollViewService } from 'src/app/scroll-view.service';
 
 @Component({
   selector: 'app-menu',
@@ -9,9 +11,8 @@ import { LanguageService } from 'src/app/language.service';
 export class MenuComponent {
 
   navExpandida: boolean = false;
-  ultimoElementoClicado: HTMLElement | null = null;
-  @ViewChild('inicio', { static: true }) inicio!: ElementRef;
   click: boolean = false;
+  classActive: string = "";
 
   menuTitle: string = "";
   linkHome: string = "";
@@ -24,29 +25,19 @@ export class MenuComponent {
   textBtnTitleES: string = "";
 
 
-  constructor(protected languageService: LanguageService) {
+  constructor(protected languageService: LanguageService, scrollViewService: ScrollViewService) {
     languageService.language.subscribe(value => {
       this.setText(value);
       languageService.setLanguage(value);
     });
+    scrollViewService.classMenu.subscribe(value => this.classActive = value);
   }
 
   protected mostrarMenu() {
     this.navExpandida = !this.navExpandida;
   }
 
-  protected clicado(event: MouseEvent): void {
-    this.inicio.nativeElement.style.color = '';
-    const novoElementoClicado = event.target as HTMLElement;
-    if (this.ultimoElementoClicado) {
-      this.ultimoElementoClicado.style.color = '';
-    }
-
-    novoElementoClicado.style.color = '#fff';
-    this.ultimoElementoClicado = novoElementoClicado;
-  }
-
-  private setText(value:string) {
+  private setText(value: keyof LangType) {
     this.menuTitle = this.languageService.textMenu[value].menuTitle;
     this.linkHome = this.languageService.textMenu[value].linkHome;
     this.linkAbout = this.languageService.textMenu[value].linkAbout;
