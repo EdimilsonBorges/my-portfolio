@@ -1,17 +1,17 @@
 <section class="section__experiencias">
     <div class="section__experiencias_educacao">
-        <h3>Educação</h3>
+        <h3>{{titleEducation}}</h3>
         <ul class="experiencia__time-line">
-            <li *ngFor="let educacao of educacoes; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || educacao.ano !== educacoes[i - 1].ano) }">
-                <h4 *ngIf="i === 0 || educacao.ano !== educacoes[i - 1].ano">{{educacao.ano}}</h4>
-                <app-item [curso]="educacao.curso" [empresa]="educacao.empresa" [descricao]="educacao.descricao" [certificate]="educacao.linkCertificado"></app-item>
+            <li *ngFor="let educacao of educacoesItem; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || educacao.ano !== educacoesItem[i - 1].ano) }">
+                <h4 *ngIf="i === 0 || educacao.ano !== educacoesItem[i - 1].ano">{{educacao.ano}}</h4>
+                <app-item [curso]="educacao.curso" [empresa]="educacao.empresa" [descricao]="educacao.descricao" [certificate]="educacao.linkCertificado" [certificateName]="certificateName"></app-item>
             </li>
         </ul>
     </div>
     <div class="section__experiencias_experiencia">
-        <h3>Experiência</h3>
+        <h3>{{titleExperience}}</h3>
         <ul class="experiencia__time-line">
-            <li *ngFor="let experiencia of experiencias; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || experiencia.ano !== experiencias[i - 1].ano) }">
+            <li *ngFor="let experiencia of experienciasItem; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || experiencia.ano !== experienciasItem[i - 1].ano) }">
                 <h4>{{experiencia.ano}}</h4>
                 <app-item [curso]="experiencia.curso" [empresa]="experiencia.empresa" [descricao]="experiencia.descricao"></app-item>
             </li>

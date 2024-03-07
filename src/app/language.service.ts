@@ -27,7 +27,7 @@ export class LanguageService {
     this.renderer.setAttribute(description, "content", this.textTags[lang].description);
   }
 
-  textTags: any = {
+  textTags:any = {
     "pt-br": {
       description: "Sou um desenvolvedor Full Stack apaixonado por criar soluções web. Minhas habilidades incluem a criação de interfaces de usuário responsivas. Estou constantemente atualizando minhas habilidades para me manter atualizado com as tendências tecnológicas, estou ansioso para enfrentar desafios e colaborar em projetos. Minha paixão pelo desenvolvimento web e mobile me impulsiona a buscar soluções criativas e a entregar produtos de alta qualidade que atendam às necessidades dos clientes e dos usuários finais."
     },
@@ -114,13 +114,47 @@ export class LanguageService {
 
   textSkills: any = {
     "pt-br": {
-     
+      skillTitle: "Habilidades Técnicas"
     },
     "us": {
-      
+      skillTitle: "Technical skills"
     },
     "es": {
-     
+      skillTitle: "Habilidades Técnicas"
+    }
+  }
+  textPortifolio: any = {
+    "pt-br": {
+      spanText: "Portifólio",
+      titlePortifolio: "Veja meu trabalho",
+    },
+    "us": {
+      spanText: "Portfolio",
+      titlePortifolio: "See my work",
+    },
+
+    "es": {
+      spanText: "Portafolio",
+      titlePortifolio: "Ver mi trabajo",
+    }
+  }
+
+  textExperiencias: any = {
+    "pt-br": {
+      titleEducation: "Educação",
+      titleExperience: "Experiência",
+      certificateName: "Certificado"
+    },
+    "us": {
+      titleEducation: "Education",
+      titleExperience: "Experience",
+      certificateName: "Certificate"
+    },
+
+    "es": {
+      titleEducation: "Educación",
+      titleExperience: "Experiencia",
+      certificateName: "Certificado"
     }
   }
 }

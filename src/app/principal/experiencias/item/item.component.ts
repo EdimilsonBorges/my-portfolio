@@ -11,6 +11,7 @@ export class ItemComponent implements OnInit {
   @Input() empresa:string = "";
   @Input() descricao:string = "";
   @Input() certificate:string = "";
+  @Input() certificateName:string = "";
 
   constructor() { }
 

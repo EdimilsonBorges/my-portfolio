@@ -5,7 +5,7 @@ export interface ISkill {
 };
 
 export const skillsFront = [
-    { title: "Âgular", percent: "40%" },
+    { title: "Agular", percent: "40%" },
     { title: "Bootstrap", percent: "60%" },
     { title: "HTML5", percent: "95%" },
     { title: "CSS3", percent: "90%" },

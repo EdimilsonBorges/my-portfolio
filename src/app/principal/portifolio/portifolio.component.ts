@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LanguageService } from 'src/app/language.service';
 import { IPortifolio, portifolios } from '../protifolios';
 
 @Component({
@@ -6,13 +7,21 @@ import { IPortifolio, portifolios } from '../protifolios';
   templateUrl: './portifolio.component.html',
   styleUrls: ['./portifolio.component.css']
 })
-export class PortifolioComponent implements OnInit {
+export class PortifolioComponent {
 
-  portifolios:IPortifolio[] = portifolios;
+  portifolios: IPortifolio[] = portifolios;
+  spanText: string = "";
+  titlePortifolio: string = "";
 
-  constructor() { }
+  constructor(private languageService: LanguageService) {
+    languageService.language.subscribe((value) => {
+      this.setText(value);
+    });
+  }
 
-  ngOnInit(): void {
+  setText(value: string) {
+    this.spanText = this.languageService.textPortifolio[value].spanText;
+    this.titlePortifolio = this.languageService.textPortifolio[value].titlePortifolio;
   }
 
 }

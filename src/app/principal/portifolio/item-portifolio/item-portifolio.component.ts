@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-portifolio',
   templateUrl: './item-portifolio.component.html',
   styleUrls: ['./item-portifolio.component.css']
 })
-export class ItemPortifolioComponent implements OnInit {
+export class ItemPortifolioComponent{
 
   @Input() imagem:string = "";
   @Input() titulo:string = "";
@@ -13,7 +13,5 @@ export class ItemPortifolioComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

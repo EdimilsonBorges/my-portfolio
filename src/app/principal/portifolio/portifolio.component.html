@@ -1,6 +1,6 @@
 <section class="container__portifolio" id="portifolio">
-    <span>Portifólio</span>
-    <h2>Veja meu trabalho</h2>
+    <span>{{spanText}}</span>
+    <h2>{{titlePortifolio}}</h2>
     <div class="itens__portifolio">
         <a *ngFor="let portifolio of portifolios.slice(0, 6)" [href]="portifolio.link" target="_blank">
             <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo"
