@@ -99,7 +99,44 @@ export class LanguageService {
           descricao: "Foram 70 horas de aprendizado neste curso. O curso abordou os conceitos fundamentais de programação orientada a objetos (POO) utilizando PHP. Os tópicos incluiram: Introdução aos princípios de POO. Criação de classes e objetos em PHP. Encapsulamento, herança e polimorfismo. Organização de código com namespaces. Tratamento de exceções. Desenvolvimento de aplicações práticas. Boas práticas, padrões de codificação banco de dados MYSQL e muito mais. O curso ofereceu uma combinação de teoria e prática, com exemplos e exercícios para consolidar o aprendizado dos alunos.",
           linkCertificado: "https://drive.google.com/file/d/1WSCae0JUjDmAOgrct2WeC-xazFBrCLPM/view?usp=drive_link"
         }
-      ]
+      ],
+      contact: {
+        titleContacts: "Contatos",
+        titleAddress: "Onde me encontrar",
+        titleSocials: "Me siga",
+        titleContact: "Contate-me",
+        textAddress: "São José do Piauí - PI, Brasil",
+        textSocials: [
+          {
+            link: "https://www.linkedin.com/in/edimilson-borges/",
+            text: "Linkedin"
+          },
+          {
+            link: "https://github.com/EdimilsonBorges/",
+            text: "GitHub"
+          },
+          {
+            link: "https://api.whatsapp.com/send?phone=5589981125275&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20pelo%20seu%20portif%C3%B3lio%20e%20queria...",
+            text: "WhatsApp"
+          }
+        ],
+
+        textContacts: [
+          {
+            link: "mailto:edimilsonborges159@gmail.com",
+            text: "edimilsonborges159@gmail.com"
+          },
+          {
+            link: "tel:5589981125275",
+            text: "+55 (89) 98112-5275"
+          },
+        ],
+        textFooter: {
+          link: "https://www.linkedin.com/in/edimilson-borges/",
+          text: "Copyright © 2024. Todos os direitos reservados | Desenvolvido por",
+          name: "Edimilson Borges"
+        }
+      }
     },
     "en-US":
     {
@@ -171,7 +208,44 @@ export class LanguageService {
           descricao: "There were 70 hours of learning in this course. The course covered the fundamental concepts of object-oriented programming (OOP) using PHP. Topics included: Introduction to OOP principles. Creation of classes and objects in PHP. Encapsulation, inheritance and polymorphism. Organization of code with namespaces. Exception handling. Development of practical applications. Good practices, MYSQL database coding standards and much more. The course offered a combination of theory and practice, with examples and exercises to consolidate students' learning.",
           linkCertificado: "https://drive.google.com/file/d/1WSCae0JUjDmAOgrct2WeC-xazFBrCLPM/view?usp=drive_link"
         }
-      ]
+      ],
+      contact: {
+        titleContacts: "Contacts",
+        titleAddress: "Where to find me",
+        titleSocials: "Follow me",
+        titleContact: "Contact me",
+        textAddress: "São José do Piauí - PI, Brazil",
+        textSocials: [
+          {
+            link: "https://www.linkedin.com/in/edimilson-borges/",
+            text: "Linkedin"
+          },
+          {
+            link: "https://github.com/EdimilsonBorges/",
+            text: "GitHub"
+          },
+          {
+            link: "https://api.whatsapp.com/send?phone=5589981125275&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20pelo%20seu%20portif%C3%B3lio%20e%20queria...",
+            text: "WhatsApp"
+          }
+        ],
+
+        textContacts: [
+          {
+            link: "mailto:edimilsonborges159@gmail.com",
+            text: "edimilsonborges159@gmail.com"
+          },
+          {
+            link: "tel:5589981125275",
+            text: "+55 (89) 98112-5275"
+          },
+        ],
+        textFooter: {
+          link: "https://www.linkedin.com/in/edimilson-borges/",
+          text: "Copyright © 2024. All rights reserved | Developed by",
+          name: "Edimilson Borges"
+        }
+      }
     },
     "es":
     {
@@ -244,7 +318,44 @@ export class LanguageService {
           descricao: "Fueron 70 horas de aprendizaje en este curso. El curso cubrió los conceptos fundamentales de la programación orientada a objetos (OOP) usando PHP. Temas incluidos: Introducción a los principios de la programación orientada a objetos. Creación de clases y objetos en PHP. Encapsulación, herencia y polimorfismo. Organización del código con espacios de nombres. Manejo de excepciones. Desarrollo de aplicaciones prácticas. Buenas prácticas, estándares de codificación de bases de datos MYSQL y mucho más. El curso ofreció una combinación de teoría y práctica, con ejemplos y ejercicios para consolidar el aprendizaje de los estudiantes.",
           linkCertificado: "https://drive.google.com/file/d/1WSCae0JUjDmAOgrct2WeC-xazFBrCLPM/view?usp=drive_link"
         }
-      ]
+      ],
+      contact: {
+        titleContacts: "Contactos",
+        titleAddress: "Donde encontrarme",
+        titleSocials: "Seguime",
+        titleContact: "Contáctame",
+        textAddress: "São José do Piauí - PI, Brasil",
+        textSocials: [
+          {
+            link: "https://www.linkedin.com/in/edimilson-borges/",
+            text: "Linkedin"
+          },
+          {
+            link: "https://github.com/EdimilsonBorges/",
+            text: "GitHub"
+          },
+          {
+            link: "https://api.whatsapp.com/send?phone=5589981125275&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20pelo%20seu%20portif%C3%B3lio%20e%20queria...",
+            text: "WhatsApp"
+          }
+        ],
+
+        textContacts: [
+          {
+            link: "mailto:edimilsonborges159@gmail.com",
+            text: "edimilsonborges159@gmail.com"
+          },
+          {
+            link: "tel:5589981125275",
+            text: "+55 (89) 98112-5275"
+          },
+        ],
+        textFooter: {
+          link: "https://www.linkedin.com/in/edimilson-borges/",
+          text: "Copyright © 2024. Todos los derechos reservados | Desarrollado por",
+          name: "Edimilson Borges"
+        }
+      }
     }
   }
 }

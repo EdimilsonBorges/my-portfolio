@@ -1,36 +1,33 @@
 <section class="contact" id="contact">
-    <h2>Contatos</h2>
+    <h2>{{titleContacts}}</h2>
     <div class="contact__social">
         <div class="contact__social_item">
             <div class="contact__social_item__cabecalho">
-                <h3>Onde me encontrar</h3>
+                <h3>{{titleAddress}}</h3>
                 <hr>
             </div>
             <div class="contact__social_item__corpo">
-                <p>São José do Piauí - PI, Brasil</p>
+                <p>{{textAddress}}</p>
             </div>
         </div>
         <div class="contact__social_item">
             <div class="contact__social_item__cabecalho">
-                <h3>Me siga</h3>
+                <h3>{{titleSocials}}</h3>
                 <hr>
             </div>
             <div class="contact__social_item__corpo">
-                <a href="https://www.linkedin.com/in/edimilson-borges/" target="_blank">Linkedin</a>
-                <a href="https://github.com/EdimilsonBorges/" target="_blank">GitHub</a>
-                <a href="https://api.whatsapp.com/send?phone=5589981125275&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20pelo%20seu%20portif%C3%B3lio%20e%20queria..." target="_blank">WhatsApp</a>
+                <a *ngFor="let textSocial of textSocials" [href]="textSocial.link" target="_blank">{{textSocial.text}}</a>
             </div>
         </div>
         <div class="contact__social_item">
             <div class="contact__social_item__cabecalho">
-                <h3>Contate-me</h3>
+                <h3>{{titleContact}}</h3>
                 <hr>
             </div>
             <div class="contact__social_item__corpo">
-                <a href="mailto:edimilsonborges159@gmail.com">edimilsonborges159@gmail.com</a>
-                <a href="tel:5589981125275" target="_blank">+55 (89) 98112-5275</a>
+                <a *ngFor="let textContact of textContacts" [href]="textContact.link">{{textContact.text}}</a>
             </div>
         </div>
     </div>
-    <p>Copyright © 2024. Todos os diteitos reservados | Desenvolvido por <a href="https://www.linkedin.com/in/edimilson-borges/">Edimilson Borges</a></p>
+    <p>{{textFooter.text}} <a [href]="textFooter.link">{{textFooter.name}}</a></p>
 </section>
