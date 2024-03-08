@@ -44,7 +44,7 @@ h3{
     margin: auto;
     width: 0.12rem;
     height: 100%;
-    background-color: var(--text-dark)
+    background-color: var(--text-dark);
 }
 .experiencia__time-line > li{
     position: relative;
@@ -68,11 +68,6 @@ h3{
     border-radius: 50%;
     background-color: var(--principal);
     border: 0.19rem solid var(--text-white);
-    visibility: hidden;
-}
-
-.mostra_ano::before{
-    visibility: visible !important;
 }
 
 
