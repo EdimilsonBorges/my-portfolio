@@ -21,7 +21,7 @@ export class HabilidadesComponent {
     });
    }
    setText(value: keyof LangType) {
-    this.skillTitle = this.languageService.textSkills[value].skillTitle;
+    this.skillTitle = this.languageService.texts[value].skills.skillTitle;
   }
 }
 

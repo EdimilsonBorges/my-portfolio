@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LanguageService } from 'src/app/services/language.service';
 import { IPortifolio, portifolios } from '../../shared/protifolios';
+import { LangType } from 'src/app/shared/lang-type.type';
 
 @Component({
   selector: 'app-portifolio',
@@ -19,9 +20,9 @@ export class PortifolioComponent {
     });
   }
 
-  setText(value: string) {
-    this.spanText = this.languageService.textPortifolio[value].spanText;
-    this.titlePortifolio = this.languageService.textPortifolio[value].titlePortifolio;
+  setText(value: keyof LangType) {
+    this.spanText = this.languageService.texts[value].portifolio.spanText;
+    this.titlePortifolio = this.languageService.texts[value].portifolio.titlePortifolio;
   }
 
 }

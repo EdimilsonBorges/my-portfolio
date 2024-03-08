@@ -38,15 +38,15 @@ export class MenuComponent {
   }
 
   private setText(value: keyof LangType) {
-    this.menuTitle = this.languageService.textMenu[value].menuTitle;
-    this.linkHome = this.languageService.textMenu[value].linkHome;
-    this.linkAbout = this.languageService.textMenu[value].linkAbout;
-    this.linkSkills = this.languageService.textMenu[value].linkSkills;
-    this.linkProjects = this.languageService.textMenu[value].linkProjects;
-    this.linkContact = this.languageService.textMenu[value].linkContact;
-    this.textBtnTitlePT = this.languageService.textMenu[value].textBtnTitlePT;
-    this.textBtnTitleUS = this.languageService.textMenu[value].textBtnTitleUS;
-    this.textBtnTitleES = this.languageService.textMenu[this.languageService.language.value].textBtnTitleES;
+    this.menuTitle = this.languageService.texts[value].menu.menuTitle;
+    this.linkHome = this.languageService.texts[value].menu.linkHome;
+    this.linkAbout = this.languageService.texts[value].menu.linkAbout;
+    this.linkSkills = this.languageService.texts[value].menu.linkSkills;
+    this.linkProjects = this.languageService.texts[value].menu.linkProjects;
+    this.linkContact = this.languageService.texts[value].menu.linkContact;
+    this.textBtnTitlePT = this.languageService.texts[value].menu.textBtnTitlePT;
+    this.textBtnTitleUS = this.languageService.texts[value].menu.textBtnTitleUS;
+    this.textBtnTitleES = this.languageService.texts[value].menu.textBtnTitleES;
   }
 
   protected selectLanguage(element: HTMLDivElement) {
@@ -54,14 +54,14 @@ export class MenuComponent {
     
     if (this.languageService.language.value !== element.id) {
       if (element.id === "pt-br") {
-        this.languageService.language.next("pt-br");
-        localStorage.setItem("language", "pt-br");
+        this.languageService.language.next("pt-BR");
+        localStorage.setItem("language", "pt-BR");
       } else if (element.id === "es") {
         this.languageService.language.next("es");
         localStorage.setItem("language", "es");
       } else {
-        this.languageService.language.next("us");
-        localStorage.setItem("language", "us");
+        this.languageService.language.next("en-US");
+        localStorage.setItem("language", "en-US");
       }
     }
   }

@@ -1,6 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { LanguageService } from 'src/app/services/language.service';
+import { LangType } from 'src/app/shared/lang-type.type';
 
 @Component({
   selector: 'app-inicio',
@@ -23,32 +24,14 @@ export class InicioComponent {
 
   constructor(protected languageService:LanguageService) {
     languageService.language.subscribe(value => {
-      this.setText();
+      this.setText(value);
     });
   }
 
-  private setText() {
-    this.welcome = this.text[this.languageService.language.value].welcome;
-    this.preTitle = this.text[this.languageService.language.value].preTitle;
-    this.posTitle = this.text[this.languageService.language.value].posTitle;
+  private setText(value: keyof LangType) {
+    this.welcome = this.languageService.texts[value].inicio.welcome;
+    this.preTitle = this.languageService.texts[value].inicio.preTitle;
+    this.posTitle = this.languageService.texts[value].inicio.posTitle;
   }
 
-  text: any = {
-    "pt-br": {
-      welcome: "Seja bem-vindo!",
-      preTitle: "Eu Sou",
-      posTitle: "Desenvolvedor Full Stack"
-
-    },
-    "us": {
-      welcome: "Welcome!",
-      preTitle: "I am",
-      posTitle: "Full Stack Developer"
-    },
-    "es": {
-      welcome: "¡Sea bienvenido!",
-      preTitle: "Soy",
-      posTitle: "Desarrollador web full stack"
-    }
-  }
 }

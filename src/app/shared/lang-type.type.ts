@@ -1,5 +1,5 @@
 export type LangType = {
-    "pt-br": any,
-    "us": any,
+    "pt-BR": any,
+    "en-US": any,
     "es": any
   }

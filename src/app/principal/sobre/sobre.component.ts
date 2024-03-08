@@ -30,13 +30,13 @@ export class SobreComponent {
   }
 
   setText(value: keyof LangType) {
-    this.profissionName = this.languageService.textAbout[value].profissionName;
-    this.description = this.languageService.textAbout[value].description;
-    this.inText = this.languageService.textAbout[value].inText;
-    this.live = this.languageService.textAbout[value].live;
-    this.age = this.languageService.textAbout[value].age;
-    this.gender = this.languageService.textAbout[value].gender;
-    this.genderText = this.languageService.textAbout[value].genderText;
+    this.profissionName = this.languageService.texts[value].about.profissionName;
+    this.description = this.languageService.texts[value].about.description;
+    this.inText = this.languageService.texts[value].about.inText;
+    this.live = this.languageService.texts[value].about.live;
+    this.age = this.languageService.texts[value].about.age;
+    this.gender = this.languageService.texts[value].about.gender;
+    this.genderText = this.languageService.texts[value].about.genderText;
   }
 
 }
