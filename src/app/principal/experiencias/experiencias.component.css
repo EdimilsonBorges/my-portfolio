@@ -5,7 +5,9 @@
     padding: 6.25rem 11% 5rem 11%;
 }
 .section__experiencias_educacao, .section__experiencias_experiencia{
+    position: relative;
     width: 100%;
+    visibility: hidden;
 }
 
 h3{

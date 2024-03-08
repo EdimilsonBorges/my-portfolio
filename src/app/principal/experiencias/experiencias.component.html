@@ -1,5 +1,5 @@
-<section class="section__experiencias" id="experiencia" appScrollAnimation>
-    <div class="section__experiencias_educacao">
+<section class="section__experiencias" id="experiencia">
+    <div class="section__experiencias_educacao" appScroll animationClass="animacao_esquerda_direita">
         <h3>{{titleEducation}}</h3>
         <ul class="experiencia__time-line">
             <li *ngFor="let educacao of educacoesItem; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || educacao.ano !== educacoesItem[i - 1].ano) }">
@@ -8,7 +8,7 @@
             </li>
         </ul>
     </div>
-    <div class="section__experiencias_experiencia">
+    <div class="section__experiencias_experiencia" appScroll animationClass="animacao_direita_esquerda">
         <h3>{{titleExperience}}</h3>
         <ul class="experiencia__time-line">
             <li *ngFor="let experiencia of experienciasItem; let i = index" [ngClass]="{ 'mostra_ano': (i === 0 || experiencia.ano !== experienciasItem[i - 1].ano) }">

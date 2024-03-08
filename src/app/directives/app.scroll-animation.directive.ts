@@ -2,7 +2,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 import { ScrollViewService } from 'src/app/services/scroll-view.service';
 
 @Directive({
-  selector: '[appScrollAnimation]'
+  selector: '[appScroll]'
 })
 export class ScrollAnimationDirective {
 
@@ -15,10 +15,10 @@ export class ScrollAnimationDirective {
   onWindowScroll() {
     const rect = this.el.nativeElement.getBoundingClientRect();
     const isVisible = (
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight + 450 || document.documentElement.clientHeight + 450) &&
-      rect.top < (window.innerHeight || document.documentElement.clientHeight)
-    );
+       rect.top >= 0 &&
+       rect.bottom <= (window.innerHeight + 450)  || (document.documentElement.clientHeight + 450) &&
+       rect.top < (window.innerHeight - 250 || document.documentElement.clientHeight - 250)
+     );
     if (isVisible) {
       if (this.animationClass !== "") {
         this.el.nativeElement.classList.add(this.animationClass);

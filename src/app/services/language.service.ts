@@ -54,7 +54,7 @@ export class LanguageService {
 
     },
     "us": {
-      menuTitle: "Portifolio",
+      menuTitle: "Portfolio",
       linkHome: "Home",
       linkAbout: "About",
       linkSkills: "Skills",
