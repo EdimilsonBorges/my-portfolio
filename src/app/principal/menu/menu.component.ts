@@ -53,7 +53,7 @@ export class MenuComponent {
     this.click = !this.click;
     
     if (this.languageService.language.value !== element.id) {
-      if (element.id === "pt-br") {
+      if (element.id === "pt-BR") {
         this.languageService.language.next("pt-BR");
         localStorage.setItem("language", "pt-BR");
       } else if (element.id === "es") {

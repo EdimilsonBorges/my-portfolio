@@ -14,10 +14,14 @@ export class LanguageService {
   constructor(private rendererFactory: RendererFactory2) {
     this.renderer = this.rendererFactory.createRenderer(null, null);
     this.storageLanguage = localStorage.getItem("language") as keyof LangType;
-    if (this.storageLanguage !== null) {
+    if (this.storageLanguage !== null && this.storageLanguage !== "pt-BR" && this.storageLanguage !=="en-US" && this.storageLanguage !=="es"){
+      localStorage.setItem("language", "pt-BR");
+      this.setLanguage("pt-BR");
+      this.storageLanguage = "pt-BR";
+    } else if(this.storageLanguage !== null) {
       this.language.next(this.storageLanguage);
-    } else {
-      this.storageLanguage = this.language.value
+    }else{
+      this.storageLanguage = this.language.value;
     }
     this.setLanguage(this.storageLanguage);
   }
