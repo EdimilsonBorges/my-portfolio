@@ -5,9 +5,9 @@
     gap: 1.87rem;
     align-items: center;
     width: 100%;
-    padding: 4rem 11% 3rem 11%;
-    background-color: var(--principal-footer);
-    box-shadow: var(--princial-shadow);
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin-top: 6.25rem;
 }
 
 .contact>h2 {

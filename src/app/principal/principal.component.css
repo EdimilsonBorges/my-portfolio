@@ -1,0 +1,7 @@
+main, footer{
+    padding: 0rem 11%;
+}
+footer{
+    background-color: var(--principal-footer);
+    box-shadow: var(--princial-shadow);
+}

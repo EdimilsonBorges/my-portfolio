@@ -10,17 +10,18 @@ export class LanguageService {
   language: BehaviorSubject<keyof LangType> = new BehaviorSubject<keyof LangType>("pt-BR");
   storageLanguage: keyof LangType;
   private renderer: Renderer2;
+  private languagens: string[] = ["pt-BR", "en-US", "es"];
 
   constructor(private rendererFactory: RendererFactory2) {
     this.renderer = this.rendererFactory.createRenderer(null, null);
     this.storageLanguage = localStorage.getItem("language") as keyof LangType;
-    if (this.storageLanguage !== null && this.storageLanguage !== "pt-BR" && this.storageLanguage !=="en-US" && this.storageLanguage !=="es"){
+    if (this.storageLanguage !== null && this.languagens.includes(this.storageLanguage)) {
+      this.language.next(this.storageLanguage);
+    } else if (this.storageLanguage !== null) {
       localStorage.setItem("language", "pt-BR");
       this.setLanguage("pt-BR");
       this.storageLanguage = "pt-BR";
-    } else if(this.storageLanguage !== null) {
-      this.language.next(this.storageLanguage);
-    }else{
+    } else {
       this.storageLanguage = this.language.value;
     }
     this.setLanguage(this.storageLanguage);

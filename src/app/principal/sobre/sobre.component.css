@@ -1,7 +1,7 @@
 .main__pefil {
     display: flex;
     height: fit-content;
-    padding: 6.25rem 11% 0rem 11%;
+    padding-top: 6.25rem;
 }
 
 .main__perfil_foto {

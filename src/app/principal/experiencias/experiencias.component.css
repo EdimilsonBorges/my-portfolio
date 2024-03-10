@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     gap: 6.25rem;
-    padding: 6.25rem 11% 5rem 11%;
+    padding-top: 6.25rem;
 }
 .section__experiencias_educacao, .section__experiencias_experiencia{
     position: relative;
