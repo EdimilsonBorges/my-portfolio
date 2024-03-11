@@ -10,8 +10,7 @@ export const skillsFront = [
     { title: "HTML5", percent: "95%" },
     { title: "CSS3", percent: "90%" },
     { title: "Typescript", percent: "65%" },
-    { title: "Javascript", percent: "80%" },
-    { title: "Figma", percent: "30%" }
+    { title: "Javascript", percent: "80%" }
 ];
 
 export const skillsBack = [
@@ -19,6 +18,5 @@ export const skillsBack = [
     { title: "PHP", percent: "60%" },
     { title: "NodeJs", percent: "30%" },
     { title: "SQL", percent: "70%" },
-    { title: "Laravel", percent: "20%" },
     { title: "Spring Framework", percent: "25%" }
 ];

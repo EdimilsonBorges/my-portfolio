@@ -84,6 +84,13 @@ export class LanguageService {
       }],
       educacoesItems: [
         {
+          ano: "2024",
+          curso: "Angular",
+          empresa: "Loiane Groner",
+          descricao: "Foram 28 horas de aprendizado. Este curso de Angular ofereceu uma introdução abrangente aos conceitos fundamentais, técnicas avançadas e melhores práticas de desenvolvimento com Angular. Aprendi a criar componentes reutilizáveis, gerenciar o estado da aplicação, implementar roteamento, consumir APIs RESTful, lidar com formulários, realizar testes e muito mais. Com uma combinação de instruções teóricas e práticas, este curso capacita os alunos a desenvolverem aplicativos web modernos e robustos com Angular.",
+          linkCertificado: "https://drive.google.com/file/d/1tyuD7-YJPrv5NtHVfSUfM6CaPpW2uYJE/view?usp=drive_link"
+        },
+        {
           ano: "2023",
           curso: "Desenvolvimento de Jogos",
           empresa: "Potência Tech iFood",
@@ -192,6 +199,13 @@ export class LanguageService {
         descricao: "It is a community project that offers a comprehensive perspective on gender struggles and relations, seeking to introduce and discuss these themes in the context of School Physical Education. Proposed through debates, meetings, practical experiences and opportunities that allow a broader understanding of the Struggles, especially as they relate to gender issues at school."
       }],
       educacoesItems: [
+        {
+          ano: "2024",
+          curso: "Angular",
+          empresa: "Loiane Groner",
+          descricao: "There were 28 hours of learning. This Angular course provided a comprehensive introduction to the fundamental concepts, advanced techniques, and best practices of developing with Angular. I learned how to create reusable components, manage application state, implement routing, consume RESTful APIs, deal with forms, perform tests and much more. With a combination of theoretical and practical instruction, this course empowers students to develop modern, robust web applications with Angular.",
+          linkCertificado: "https://drive.google.com/file/d/1tyuD7-YJPrv5NtHVfSUfM6CaPpW2uYJE/view?usp=drive_link"
+        },
         {
           ano: "2023",
           curso: "Game Development",
@@ -303,6 +317,13 @@ export class LanguageService {
         }
       ],
       educacoesItems: [
+        {
+          ano: "2024",
+          curso: "Angular",
+          empresa: "Loiane Groner",
+          descricao: "Fueron 28 horas de aprendizaje. Este curso de Angular proporcionó una introducción completa a los conceptos fundamentales, técnicas avanzadas y mejores prácticas de desarrollo con Angular. Aprendí a crear componentes reutilizables, administrar el estado de las aplicaciones, implementar enrutamiento, consumir API RESTful, manejar formularios, realizar pruebas y mucho más. Con una combinación de instrucción teórica y práctica, este curso permite a los estudiantes desarrollar aplicaciones web modernas y sólidas con Angular.",
+          linkCertificado: "https://drive.google.com/file/d/1tyuD7-YJPrv5NtHVfSUfM6CaPpW2uYJE/view?usp=drive_link"
+        },
         {
           ano: "2023",
           curso: "Desarrollo de juegos",
