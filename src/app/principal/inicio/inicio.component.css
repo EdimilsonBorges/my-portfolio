@@ -34,8 +34,9 @@
     color: var(--text-white);
     font-weight: 900;
     font-size: 2.5rem;
+    text-align: center;
 }
-.container__inicio > h1 > span {
+.container__inicio > h1 > span:first-child {
     color: var(--secundario);
     font-weight: 900;
     font-size: 2.5rem;
@@ -47,10 +48,11 @@
     text-align: center;
     margin: 1.87rem auto;
     background-color: var(--background-title);
+    color: var(--secundario);
     border-radius: 3.12rem;
     padding: 0.62rem 1.25rem;
     font-weight: 600;
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
 }
 @media screen and (max-width:500px) {
     .container__inicio>p {
@@ -59,7 +61,10 @@
     .container__inicio>h1 {
         font-size: 8vw;
     }
+    .container__inicio > h1 > span:first-child {
+        font-size: 8vw;
+    }
     .skill{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
