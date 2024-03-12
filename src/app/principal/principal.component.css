@@ -1,6 +1,11 @@
 main, footer{
     padding: 0rem 11%;
+    overflow-x: hidden;
 }
+header{
+    overflow-x: hidden; 
+}
+
 footer{
     background-color: var(--principal-footer);
     box-shadow: var(--princial-shadow);
