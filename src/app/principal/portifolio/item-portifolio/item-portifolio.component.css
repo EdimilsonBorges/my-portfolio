@@ -1,4 +1,3 @@
-
 .item__portifolio {
     position: relative;
     width: 100%;
@@ -8,9 +7,10 @@
     cursor: pointer;
     box-shadow: 0px 0px 1px 0px #323131;
     visibility: hidden;
-    
+
 }
-.item__portifolio:hover{
+
+.item__portifolio:hover {
     border-radius: 0.31rem;
     box-shadow: 0px 0px 3px 0px #323131;
 }
@@ -18,6 +18,23 @@
 .item__portifolio>img {
     width: 100%;
     height: auto;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+}
+
+.item__portifolio>img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+}
+
+.item__portifolio:hover > img {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
 }
 
 .item__portifolio__detalhes {
