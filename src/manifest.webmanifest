@@ -1,7 +1,7 @@
 {
   "name": "Portifolio de Edimilson",
-  "short_name": "my-portifolio",
-  "theme_color": "#1976d2",
+  "short_name": "Portifolio",
+  "theme_color": "#343A40",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
