@@ -23,6 +23,7 @@ export class MenuComponent {
   textBtnTitlePT: string = "";
   textBtnTitleUS: string = "";
   textBtnTitleES: string = "";
+  percentBar = "0%";
 
 
   constructor(protected languageService: LanguageService, scrollViewService: ScrollViewService) {
@@ -31,6 +32,7 @@ export class MenuComponent {
       languageService.setLanguage(value);
     });
     scrollViewService.classMenu.subscribe(value => this.classActive = value);
+    scrollViewService.percentBar.subscribe(percent => this.percentBar = `${percent}%`);
   }
 
   protected mostrarMenu() {

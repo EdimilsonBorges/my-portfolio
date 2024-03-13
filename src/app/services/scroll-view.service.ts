@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class ScrollViewService {
 
   classMenu: BehaviorSubject<string> = new BehaviorSubject<string>("inicio");
+  percentBar: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
   constructor() { }
 }

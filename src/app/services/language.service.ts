@@ -10,7 +10,7 @@ export class LanguageService {
   language: BehaviorSubject<keyof LangType> = new BehaviorSubject<keyof LangType>("pt-BR");
   storageLanguage: keyof LangType;
   private renderer: Renderer2;
-  private languagens: string[] = ["pt-BR", "en-US", "es"];
+  private readonly languagens: string[] = ["pt-BR", "en-US", "es"];
 
   constructor(private rendererFactory: RendererFactory2) {
     this.renderer = this.rendererFactory.createRenderer(null, null);

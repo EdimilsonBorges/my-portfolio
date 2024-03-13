@@ -13,6 +13,18 @@ export class ScrollAnimationDirective {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
+    this.scrollProgress();
+    this.pageSelect()
+  }
+
+  scrollProgress(){
+    const scrollTop = scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    this.scrollViewService.percentBar.next(progress);
+  }
+
+  pageSelect(){
     const rect = this.el.nativeElement.getBoundingClientRect();
     const isVisible = (
        rect.top >= 0 &&
