@@ -6,7 +6,6 @@
 
 .main__perfil_foto {
     position: relative;
-    display: flex;
     visibility: hidden;
     position: relative;
     width: auto;
