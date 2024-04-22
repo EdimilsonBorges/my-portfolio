@@ -12,6 +12,8 @@ export class ItemPortifolioComponent{
   @Input() descricao:string = "";
   @Input() linkVer:string = "";
   @Input() linkVis:string = "";
+  @Input() txtVer:string = "";
+  @Input() txtVis:string = "";
 
   constructor() { }
 

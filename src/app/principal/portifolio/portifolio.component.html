@@ -3,7 +3,7 @@
     <h2>{{titlePortifolio}}</h2>
     <div class="itens__portifolio">
         <div *ngFor="let portifolio of portifolios.slice(0, 6)">
-            <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo"
+            <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo" [txtVer]="txtVer" [txtVis]="txtVis"
                 [descricao]="portifolio.tecnologias" [linkVer]="portifolio.linkVer" [linkVis]="portifolio.linkVis"></app-item-portifolio>
         </div>
     </div>

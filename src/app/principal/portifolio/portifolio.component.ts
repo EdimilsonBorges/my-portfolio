@@ -13,6 +13,8 @@ export class PortifolioComponent {
   portifolios: IPortifolio[] = portifolios;
   spanText: string = "";
   titlePortifolio: string = "";
+  txtVer:string = "";
+  txtVis:string = "";
 
   constructor(private languageService: LanguageService) {
     languageService.language.subscribe((value) => {
@@ -23,6 +25,8 @@ export class PortifolioComponent {
   setText(value: keyof LangType) {
     this.spanText = this.languageService.texts[value].portifolio.spanText;
     this.titlePortifolio = this.languageService.texts[value].portifolio.titlePortifolio;
+    this.txtVer = this.languageService.texts[value].portifolio.txtVer;
+    this.txtVis = this.languageService.texts[value].portifolio.txtVis;
   }
 
 }

@@ -70,6 +70,8 @@ export class LanguageService {
       portifolio: {
         spanText: "Portifólio",
         titlePortifolio: "Veja meu trabalho",
+        txtVer:"Ver Código",
+        txtVis:"Visualizar"
       },
       experiencias: {
         titleEducation: "Educação",
@@ -186,6 +188,8 @@ export class LanguageService {
       portifolio: {
         spanText: "Portfolio",
         titlePortifolio: "See my work",
+        txtVer:"View Code",
+        txtVis:"To view"
       },
       experiencias: {
         titleEducation: "Education",
@@ -302,6 +306,8 @@ export class LanguageService {
       portifolio: {
         spanText: "Portafolio",
         titlePortifolio: "Ver mi trabajo",
+        txtVer:"Ver Código",
+        txtVis:"Para ver"
       },
       experiencias: {
         titleEducation: "Educación",
