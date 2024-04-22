@@ -10,6 +10,8 @@ export class ItemPortifolioComponent{
   @Input() imagem:string = "";
   @Input() titulo:string = "";
   @Input() descricao:string = "";
+  @Input() linkVer:string = "";
+  @Input() linkVis:string = "";
 
   constructor() { }
 

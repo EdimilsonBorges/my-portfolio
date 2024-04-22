@@ -2,10 +2,10 @@
     <span>{{spanText}}</span>
     <h2>{{titlePortifolio}}</h2>
     <div class="itens__portifolio">
-        <a *ngFor="let portifolio of portifolios.slice(0, 6)" [href]="portifolio.link" target="_blank">
+        <div *ngFor="let portifolio of portifolios.slice(0, 6)">
             <app-item-portifolio [imagem]="portifolio.imagem" [titulo]="portifolio.titulo"
-                [descricao]="portifolio.tecnologias"></app-item-portifolio>
-        </a>
+                [descricao]="portifolio.tecnologias" [linkVer]="portifolio.linkVer" [linkVis]="portifolio.linkVis"></app-item-portifolio>
+        </div>
     </div>
     <!-- <a class="btn__ver-todos" href="#" type="button">Ver todos</a> -->
 </section>
